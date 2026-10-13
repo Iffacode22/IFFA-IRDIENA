@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile - Lab 2 Task 1</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f6fa; margin: 0; padding: 24px; color: #222; }
+    h1 { text-align: center; color: #1f3a6e; }
+    table { border-collapse: collapse; width: 100%; max-width: 800px; margin: 0 auto; background: #fff; box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+    th, td { border: 1px solid #999; padding: 10px 12px; text-align: left; vertical-align: middle; }
+    th { background: #dce5f5; width: 22%; }
+    td.sub { background: #eef2fa; font-weight: bold; width: 20%; }
+    td.photo { text-align: center; width: 24%; }
+    td.photo img { width: 120px; height: 150px; object-fit: cover; border-radius: 6px; }
+    ul { margin: 0; padding-left: 18px; }
+    a { color: #1f5fbf; }
+  </style>
+</head>
+<body>
+  <h1>Student Profile</h1>
+
+  <table>
+    <tr>
+      <th>Name</th>
+      <td>[Your Full Name]</td>
+      <td class="photo">
+        <img src="photo.jpg" alt="Photo of [Your Name]">
+      </td>
+    </tr>
+
+    <tr>
+      <th>Date of birth</th>
+      <td colspan="2">[DD Month YYYY]</td>
+    </tr>
+
+    <tr>
+      <th>Religion</th>
+      <td colspan="2">[Your religion]</td>
+    </tr>
+
+    <tr>
+      <th>Race</th>
+      <td colspan="2">[Your race]</td>
+    </tr>
+
+    <tr>
+      <th rowspan="4">Address</th>
+      <td class="sub">Street</td>
+      <td>[Street address]</td>
+    </tr>
+    <tr>
+      <td class="sub">Town</td>
+      <td>[Town]</td>
+    </tr>
+    <tr>
+      <td class="sub">District</td>
+      <td>[District]</td>
+    </tr>
+    <tr>
+      <td class="sub">State</td>
+      <td>[State]</td>
+    </tr>
+
+    <tr>
+      <th rowspan="3">Contact</th>
+      <td class="sub">Mobile Phone</td>
+      <td><a href="tel:+60123456789">+60 12-345 6789</a></td>
+    </tr>
+    <tr>
+      <td class="sub">Social Media</td>
+      <td><a href="https://www.instagram.com/yourusername" target="_blank">@yourusername</a></td>
+    </tr>
+    <tr>
+      <td class="sub">Website</td>
+      <td><a href="https://yourusername.github.io/" target="_blank">yourusername.github.io</a></td>
+    </tr>
+
+    <tr>
+      <th>Course and Institution</th>
+      <td colspan="2">[Your course], Universiti Tun Hussein Onn Malaysia (UTHM)</td>
+    </tr>
+
+    <tr>
+      <th>Programming skills</th>
+      <td colspan="2">
+        <ul>
+          <li>HTML</li>
+          <li>[Skill 2]</li>
+          <li>[Skill 3]</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <th>Hobbies</th>
+      <td colspan="2">
+        <ul>
+          <li>[Hobby 1]</li>
+          <li>[Hobby 2]</li>
+          <li>[Hobby 3]</li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <th>2026 Wishlist</th>
+      <td colspan="2">
+        <ol>
+          <li>[Wish 1]</li>
+          <li>[Wish 2]</li>
+          <li>[Wish 3]</li>
+        </ol>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
