@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iffa Irdiena | Lab 2 Portfolio</title>
+  <style>
+    :root {
+      --bg: #f4f7fb;
+      --card: #ffffff;
+      --primary: #1f3a6e;
+      --secondary: #2f5ea5;
+      --accent: #dfeafc;
+      --text: #1d2430;
+      --muted: #4d5867;
+      --shadow: 0 12px 30px rgba(31, 58, 110, 0.12);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #edf3ff 0%, #f7f8fc 100%);
+      color: var(--text);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .hero {
+      background: var(--card);
+      border-radius: 20px;
+      box-shadow: var(--shadow);
+      padding: 30px;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .profile-photo {
+      width: 220px;
+      height: 260px;
+      object-fit: cover;
+      border-radius: 18px;
+      border: 4px solid var(--accent);
+      box-shadow: 0 10px 24px rgba(47, 94, 165, 0.18);
+      display: block;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(2rem, 4vw, 3rem);
+      color: var(--primary);
+    }
+
+    .subtitle {
+      margin: 0 0 20px;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+
+    .tag {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--secondary);
+      padding: 8px 14px;
+      border-radius: 999px;
+      font-weight: bold;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 22px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: var(--card);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      padding: 24px;
+    }
+
+    .card h2 {
+      margin-top: 0;
+      color: var(--primary);
+      font-size: 1.3rem;
+    }
+
+    .card ul {
+      padding-left: 20px;
+      margin-bottom: 0;
+      line-height: 1.8;
+    }
+
+    .button-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .btn {
+      display: inline-block;
+      text-decoration: none;
+      background: var(--primary);
+      color: white;
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-weight: bold;
+      transition: transform 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn.secondary {
+      background: var(--secondary);
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
+
+      .profile-photo {
+        width: 180px;
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="hero">
+      <img class="profile-photo" src="photo.jpg" alt="Student portrait" />
+      <div>
+        <h1>Iffa Irdiena</h1>
+        <p class="subtitle">BIC 21203 Web Development - Lab 2</p>
+
+        <div>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">Web Design</span>
+        </div>
+
+        <div class="button-row">
+          <a class="btn" href="task_1.html">Open Student Profile</a>
+          <a class="btn secondary" href="task_2.html">Open Registration Form</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="cards">
+      <article class="card">
+        <h2>Project Overview</h2>
+        <ul>
+          <li>Created a student profile page using HTML and CSS.</li>
+          <li>Built a conference registration form with form controls.</li>
+          <li>Prepared the repository for GitHub Pages deployment.</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h2>Tasks Included</h2>
+        <ul>
+          <li>Task 1: Student Profile Layout</li>
+          <li>Task 2: Conference Registration Form</li>
+          <li>Photo and supporting assets included</li>
+        </ul>
+      </article>
+    </section>
+  </div>
+</body>
+</html>
